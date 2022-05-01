@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Control - F</title>
+        <meta charset = "utf-8">
+        <link href = "style.css" rel = "stylesheet" type = "text/css" />
+    </head> 
+
+    <body>
+        <h2 id = "Title_Text" class = "text-center"> Find Text in Every Tab</h2>
+        
+        <label for = "name" id = "Header"> Enter Text: </label> 
+
+        <form id = "User_Interaction">
+            <input type = "text" id = "name" name = "name" value = "" placeholder = "Search">
+
+            <!-- Calls the javascript function: clicked()-->
+            <input id = "Click_Button" type = "button" class = "btn" width = "40" height = "30" value = "Find!">  
+            <input id = "delete_button" type = "button" class = "delete" width = "40" height = "30" value = "Clear">         
+
+        </form>
+
+        <label id = "Labels" for="Case_Sensitive"> Case-Sensitive </label>
+        <input type = "checkbox" id = "Case_Sensitive">
+
+
+    </body>
+
+    <script type = "text/javascript" src = "popup.js"></script>
+    
+</html>

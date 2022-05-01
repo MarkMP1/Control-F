@@ -1,0 +1,28 @@
+{
+    "name": "Control F2",
+    "description": "Helps you to find text across multiple tabs",
+    "version": "0.12",
+    "manifest_version": 3,
+    "author": "mrwhy123#2441, uselessleaf#9850, and Users#8014",
+    "background": {
+        "service_worker": "background.js"
+    }, 
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["inserter.js"]
+        }
+    ],
+    "permissions":[
+        "tabs",
+        "scripting",
+        "alarms"
+    ],
+    "host_permissions":[
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Control F"
+    }
+}
